@@ -380,7 +380,7 @@ export default function Sales() {
             <section className='testimonal mt-5'>
 
                 <div className="container">
-                    <h1 className="section-header mt-4 " style={{color:"black"}}>
+                    <h1 className="section-header mt-4 " style={{ color: "black" }}>
                         client review <span className='mt-3'> Lorem ipsum dolor sit amet.</span>
                     </h1>
                     <div className="testimonals">
