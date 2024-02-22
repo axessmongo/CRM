@@ -9,7 +9,9 @@ import icon3 from '../assets/images/icon3.png'
 import img2 from '../assets/images/img2.jpg'
 import img5 from '../assets/images/img5.png'
 import img4 from '../assets/images/img4.png'
+import Nav from './Nav';
 import Sales from './Sales';
+import Scroll from './Scroll';
 export default function About() {
     const [active, setActive] = useState(false)
     AOS.init({
@@ -40,28 +42,29 @@ export default function About() {
     gotoTop();
     return (
         <div>
+            <Nav />
 
-            <section>
-                <div class="banner-area-three">
+            <section id='Home' className='overflow-hidden'>
+                <div class="banner-area-three ">
                     <div class="d-table">
                         <div class="d-table-cell">
-                            <div class="container">
-                                <div class="banner-content">
+                            <div class="container mt-5">
+                                <div class="banner-content  ">
 
-                                    <h1 className='heading5'>Trust Your Sales By Trusted CRM</h1>
+                                    <h1 className='heading5 ' style={{ fontSize:"25px"}}>Trust Your Sales By Trusted CRM</h1>
                                     <p className='primary-title heading4 text-center mt-4' style={{ color: "white", fontSize: "19px" }}>Jilva CRM empowers a global network of over 150,000 businesses in 180 countries to engage with customers and grow their revenue</p>
 
-                                    <div class="banner-btn">
+                                    <div class="banner-btn text-center mt-5">
                                         <a href="#" class="default-btn heading6" style={{ textDecoration: "none" }}>
                                             Try It Free
                                             <i class="bx bx-right-arrow-alt"></i>
                                             <span></span>
                                         </a>
-
-                                        <div class="shape1">
-                                            <img src={shape1} alt="image" />
-                                        </div>
-                                        <div class="creative-shape">
+    {/* 
+                                            <div class="shape1">
+                                                <img src={shape1} alt="image" />
+                                            </div> */}
+                                        <div class="creative-shape d-none d-lg-block">
                                             <img src={shape3} alt="image" />
                                         </div>
                                     </div>
@@ -73,7 +76,7 @@ export default function About() {
                 </div>
             </section>
 
-            <section>
+            <section id='Managment' className='container'>
                 <div className='section-title'>
                     <div className='text-center heading6'>
                         <span className='mt-4'>CRM Management</span>
@@ -85,7 +88,7 @@ export default function About() {
                         <div className="row">
                             <div className="col-md-4 ">
                                 <div className='card custom-card cardish'>
-                                    <div className='w-50 mx-auto wrap-icon p-3 rounded-3 mb-2 top-management-item top-management-slider'>
+                                    <div className='w-50 mx-auto wrap-icon p-3 rounded-3 mb-2 top-management-item top-management-slider text-center'>
                                         <img
                                             src={icon1}
                                             // style={{backgroundColor:"red"}}
@@ -108,7 +111,7 @@ export default function About() {
 
                             <div className="col-md-4 ">
                                 <div className='card custom-card cardish'>
-                                    <div className='w-50 mx-auto wrap-icon p-3 rounded-3 mb-1 top-management-item top-management-slider'>
+                                    <div className='w-50 mx-auto wrap-icon p-3 rounded-3 mb-1 top-management-item top-management-slider text-center'>
                                         <img
                                             src={icon2}
                                             // style={{backgroundColor:"red"}}
@@ -131,7 +134,7 @@ export default function About() {
                             </div>
                             <div className="col-md-4 ">
                                 <div className='card custom-card cardish'>
-                                    <div className='w-50 mx-auto wrap-icon p-3 rounded-3 mb-2 top-management-item top-management-slider'>
+                                    <div className='w-50 mx-auto wrap-icon p-3 rounded-3 mb-2 top-management-item top-management-slider text-center'>
                                         <img
                                             src={icon3}
                                             // style={{backgroundColor:"red"}}
@@ -162,7 +165,7 @@ export default function About() {
                 <div className="container">
                     <div className="row align-items-center">
                         <div class="col-lg-6">
-                            <div class="dedicated-content">
+                            <div class="dedicated-content mt-4">
                                 <span>About CRM</span>
                                 <h2 className='heading6'>We Are Fully Dedicated To Support!!!</h2>
 
@@ -190,6 +193,7 @@ export default function About() {
                 </div>
             </section>
             <Sales />
+            <Scroll/>
 
         </div>
     )

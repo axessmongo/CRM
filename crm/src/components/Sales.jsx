@@ -16,18 +16,20 @@ import profile from '../assets/images/profile-2.png'
 export default function Sales() {
     return (
         <>
-            <section class="sales-area pt-100 pb-70">
+        
+            <section class="sales-area pt-100 pb-70" id='Features'>
+                
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
-                            <div class="sales-content">
+                            <div class="sales-content ">
                                 <div className='text-center section-title'>
-                                    <span className="" style={{ color: "white" }}>CRM Features</span>
+                                    <span className="mt-4" style={{ color: "white" }}>CRM Features</span>
                                 </div>
-                                <h2 className='heading5'>Keep Up The Sales Remote Features</h2>
-                                <p className='heading4'>Team ipsum dolor sit ametconsecteturing elit sed do eiusmod tempor incididunt laboret dolore magna aliqua minaquaerat.</p>
+                                <h2 className='fs-3 mt-5'>Keep Up The Sales Remote Features</h2>
+                                {/* <p className='heading4'>Team ipsum dolor sit ametconsecteturing elit sed do eiusmod tempor incididunt laboret dolore magna aliqua minaquaerat.</p> */}
 
-                                <ul class="list heading6">
+                                <ul class="list heading6 mt-4 py-4">
                                     <li>
                                         <i class="bx bx-right-arrow-alt"></i>
                                         Enterprise-class  applications
@@ -47,9 +49,9 @@ export default function Sales() {
                         <div class="col-lg-6">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="sales-box">
-                                        <div class="image">
-                                            <img src={icon5} alt="image" className='w-25' />
+                                    <div class="sales-box ">
+                                        <div class="image d-none d-lg-block">
+                                            <img src={icon5} alt="image" className='ac-img' />
                                         </div>
                                         <h3 className='heading5'>Conduct Sales Meetings</h3>
                                         <p className='heading4'>Meeting ipsum dolor sit amseteturing elit sed do eiusmod tempor incididunt</p>
@@ -59,7 +61,7 @@ export default function Sales() {
                                 <div class="col-lg-6">
                                     <div class="sales-box">
                                         <div class="image">
-                                            <img src={icon6} alt="image" className='w-25' />
+                                            <img src={icon6} alt="image" className='ac-img' />
                                         </div>
                                         <h3 className='heading5'>Conduct Sales Meetings</h3>
                                         <p className='heading4'>Meeting ipsum dolor sit amseteturing elit sed do eiusmod tempor incididunt</p>
@@ -69,7 +71,7 @@ export default function Sales() {
                                 <div class="col-lg-6 offset-lg-3">
                                     <div class="sales-box">
                                         <div class="image">
-                                            <img src={img6} alt="image" className='w-25' />
+                                            <img src={img6} alt="image" className='ac-img' />
                                         </div>
                                         <h3 className='heading5'>Collaborate With Your Team</h3>
                                         <p className='heading4'>Meeting ipsum dolor sit amseteturing elit sed do eiusmod tempor incididunt</p>
@@ -80,59 +82,59 @@ export default function Sales() {
                     </div>
                 </div>
 
-                <div class="shape">
+                <div class="shape d-none d-lg-block">
                     <img src={img7} alt="image" />
                 </div>
             </section>
-            <section>
+            <section id='CRM Steps' >
 
                 <div className='sales-content overflow-hidden'>
                     <div className='section-title text-center mt-5'>
                         <span>CRM Steps</span>
                     </div>
                     <h4 className='heading10 mt-4 text-center' style={{ color: "black" }}>We Accompany On Steps</h4>
-                    <p className='primary-title heading4 text-center mt-4'>Your business is in a state of constant evolution—an evolution that your software needs to be able to accomodate effortlessly</p>
+                    <p className='primary-title heading4 text-center mt-4'style={{ color: "black", fontSize:"16px" }}>Your business is in a state of constant evolution—an evolution that your software needs to be able to accomodate effortlessly</p>
                     <div className="container">
                         <div className="row">
                             <div class="tab accompany-list-tab ">
-                                <ul class="tabs active mt-5">
+                                <ul class="tabs active mt-5 p-0">
                                     <li class="current border ">
 
-                                        <div className='text-center mt-4 '>
-                                            <img src={icon10} alt="image" className='w-25 img-fluid ' />
+                                        <div className='text-center mt-4'>
+                                            <img src={icon10} alt="image" className=' img-fluid ac-img' />
                                         </div>
-                                        <span className='heading5 mt-4 py-3 px-3'>Small Business</span>
+                                        <span className='heading5 mt-4 py-3 px-3 '>Small Business</span>
 
                                     </li>
                                     <li className='border'>
 
                                         <div className='text-center mt-4'>
-                                            <img src={icon11} alt="image" className='w-25 img-fluid ' />
+                                            <img src={icon11} alt="image" className=' img-fluid ac-img  ' />
                                         </div>
                                         <span className='heading5 mt-4 py-3 px-3'>CRM For Life Sciences  </span>
 
                                     </li>
                                     <li className='border'>
                                         <div className='text-center mt-4'>
-                                            <img src={icon13} alt="image" className='w-25 img-fluid ' />
+                                            <img src={icon13} alt="image" className=' img-fluid  ac-img' />
                                         </div>
                                         <span className='heading5 mt-4 py-3 px-3'>Real Estate CRM</span>
                                     </li>
                                     <li className='border'>
                                         <div className='text-center mt-4'>
-                                            <img src={icon14} alt="image" className='w-25 img-fluid ' />
+                                            <img src={icon14} alt="image" className=' img-fluid  ac-img' />
                                         </div>
                                         <span className='heading5 mt-4 py-3 px-3'>CRM Financial Services</span>
                                     </li>
                                     <li className='border'>
                                         <div className='text-center mt-4'>
-                                            <img src={icon15} alt="image" className='w-25 img-fluid ' />
+                                            <img src={icon15} alt="image" className=' img-fluid  ac-img' />
                                         </div>
                                         <span className='heading5 mt-4 py-3 px-4'>CRM Insurance</span>
                                     </li>
                                     <li className='border'>
                                         <div className='text-center mt-4'>
-                                            <img src={icon6} alt="image" className='w-25 img-fluid ' />
+                                            <img src={icon6} alt="image" className=' img-fluid ac-img ' />
                                         </div>
                                         <span className='heading5 mt-4 py-3 px-3'>Retail Management</span>
                                     </li>
@@ -143,15 +145,15 @@ export default function Sales() {
                                         <div class="row align-items-center">
                                             <div class="col-lg-6">
                                                 <div class="accompany-image">
-                                                    <img src={bg3} alt="image" className='img-fluid' />
+                                                    <img src={bg3} alt="image" className='img-fluid ' />
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
-                                                <div class="accompany-content">
-                                                    <h2 style={{ color: "red", textAlign: "center" }} className='heading5'>Small Businesss</h2>
+                                                <div class="accompany-content mt-4">
+                                                    <h2 style={{ color: "red", textAlign: "center",fontSize:"20px" }} className='heading5'>Small Business</h2>
 
-                                                    <p className='primary-title heading4 text-center mt-4'>Our plan dolor sit amet conseetur diisci velit sed quiLorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                                                    <p className='primary-title heading4 text-center mt-4' style={{color:"black"}}>Our plan dolor sit amet conseetur diisci velit sed quiLorem ipsum dolor sit ame consectetur adipisicing elit</p>
 
                                                     <ul class="list">
                                                         <li className=' heading6'>
@@ -193,7 +195,7 @@ export default function Sales() {
 
 
             </section>
-            <section>
+            <section id='CRM selling'>
                 <div className="container imagish">
                     <div className="row align-items-center">
                         <div class="col-md-6">
@@ -237,7 +239,7 @@ export default function Sales() {
 
             </section>
             <section>
-                <section class="container mt-5" id="faq">
+                <section class="container mt-5 overflow-x-hidden" id="faq">
                     <div class="common-padding pb-lg-0">
                         <h1 class="text-center heading7" data-aos="fade-up" data-aos-duration="600">Frequently Asked Questions
                             (FAQs)</h1>
@@ -351,7 +353,7 @@ export default function Sales() {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mt-md-4">
+                                <div class="col-md-6 mt-md-5">
                                     <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header">
@@ -378,10 +380,11 @@ export default function Sales() {
                 </section>
             </section>
             <section className='testimonal mt-5'>
+            
 
-                <div className="container">
+                <div className="container border">
                     <h1 className="section-header mt-4 " style={{ color: "black" }}>
-                        client review <span className='mt-3'> Lorem ipsum dolor sit amet.</span>
+                        client review <span className='mt-3'></span>
                     </h1>
                     <div className="testimonals">
                         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"     >
@@ -500,20 +503,9 @@ export default function Sales() {
             </section>
             <section class="footer-area mt-5">
                 <div class="container">
-                    <div class="subscribe-area">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="subscribe-content">
-                                    <span className='heading5 mt-4 py-3 px-3' style={{ color: "red" }}>Don't Miss Our Update</span>
+                   
 
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <div class="row">
+                    <div class="row text-center text-lg-short">
                         <div class="col-lg-3 col-sm-6">
                             <div class="single-footer-widget ">
                                 <h3 className='heading5 ' >About CRM</h3>

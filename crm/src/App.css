@@ -138,23 +138,16 @@
 }
 
 .accompany-list-tab .tabs {
-  padding-left: 0;
-  list-style-type: none;
-
-
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: -5px;
-  margin-right: -5px;
-  margin-bottom: 45px;
+  list-style-type: none;
 }
 
 .accompany-list-tab .tabs li {
 
   max-width: 180px;
   text-align: center;
-  margin: auto;
+  margin: 20px auto;
 }
 
 
@@ -456,10 +449,21 @@
 .testimonal {
   display: grid;
   place-items: center;
-  
-  
-  /* // height: 100vh; */
-  background-color:gray;
+
+}
+
+.accompany-list-tab .ac-img {
+  height: 50px;
+  margin: auto;
+
+
+}
+
+.ac-img {
+  height: 50px;
+  margin: auto;
+
+
 }
 
 .section-header {
@@ -488,11 +492,6 @@
   font-weight: 300;
 }
 
-.testimonals {
-  max-width: 1000px;
-  padding: 0px 15px 50px;
-  margin: 0 auto 80px auto;
-}
 
 .single-item {
   background-color: white;
@@ -504,13 +503,12 @@
 
 .profile {
   margin-bottom: 40px;
+  text-align: center;
 
 
 }
 
-.img-area {
-  margin: 0 15px 15px 65px;
-}
+
 
 .img-area img {
   height: 200px;
@@ -533,7 +531,7 @@
 .content1 p span {
   font-size: 46px;
   margin-right: 16px;
-  color:green;
+  color: green;
 }
 
 .socials i {
@@ -553,6 +551,37 @@
 
 }
 
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #f81f1f;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #f81f1f;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 
 
 @media (max-width :767px) {
@@ -565,6 +594,11 @@
 
 
   }
+
+  .conatiner {
+    padding: 0 5%;
+  }
+
 
   .dedicated-image .text p {
     width: 120px;
@@ -582,4 +616,13 @@
     margin: 0;
   }
 
+  .sales-content .heading5 {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  .testimonals {
+    margin: 0;
+    padding: 0;
+  }
 }
