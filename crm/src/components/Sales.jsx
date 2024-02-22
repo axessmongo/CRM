@@ -239,7 +239,7 @@ export default function Sales() {
 
             </section>
             <section>
-                <section class="container mt-5 overflow-x-hidden" id="faq">
+                <section class="container mt-5 overflow-hidden" id="faq">
                     <div class="common-padding pb-lg-0">
                         <h1 class="text-center heading7" data-aos="fade-up" data-aos-duration="600">Frequently Asked Questions
                             (FAQs)</h1>

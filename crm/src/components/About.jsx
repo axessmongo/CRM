@@ -46,8 +46,8 @@ export default function About() {
 
             <section id='Home' className='overflow-hidden'>
                 <div class="banner-area-three ">
-                    <div class="d-table">
-                        <div class="d-table-cell">
+                    <div class="d-">
+                        <div class="">
                             <div class="container mt-5">
                                 <div class="banner-content  ">
 
