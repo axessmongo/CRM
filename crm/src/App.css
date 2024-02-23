@@ -102,7 +102,7 @@
 
   transition: 0.6s;
   color: #ffffff;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 .sales-box p {
@@ -310,7 +310,7 @@
   border-radius: 5px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  line-height: 50px;
+  /* line-height: 50px; */
   text-transform: uppercase;
   cursor: pointer;
   font-size: 16px;
@@ -618,7 +618,7 @@
 
   .sales-content .heading5 {
     font-size: 15px;
-    line-height: 1.2;
+    /* line-height: 1.2; */
   }
 
   .testimonals {

@@ -86,7 +86,7 @@ export default function Sales() {
                     <img src={img7} alt="image" />
                 </div>
             </section>
-            <section id='CRM Steps' >
+            <section id='CRM Steps' className="container" >
 
                 <div className='sales-content overflow-hidden'>
                     <div className='section-title text-center mt-5'>
